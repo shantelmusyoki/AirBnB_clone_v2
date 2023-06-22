@@ -126,10 +126,10 @@ class HBNBCommand(cmd.Cmd):
                 else:
                     try:
                         value = int(value)
-                    except Exception:
+                    except:
                         try:
                             value = float(value)
-                        except Exception:
+                        except:
                             continue
                 dic[key] = value
         return (dic)
